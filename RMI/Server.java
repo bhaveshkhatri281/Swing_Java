@@ -1,14 +1,12 @@
-package RMI;
 import java.rmi.Naming;
 
 public class Server {
     public static void main(String[] args) {
-        try{
+        try {
             Calc_Implementation obj = new Calc_Implementation();
             Naming.rebind("rmi://localhost/Calculator", obj);
             System.out.println("RMI Server Strated....");
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
