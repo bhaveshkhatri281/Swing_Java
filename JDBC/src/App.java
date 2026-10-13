@@ -16,7 +16,7 @@ public class App {
             ps.executeUpdate();
             System.out.println("Record Inserted");
             Statement st = con.createStatement();
-            ResultSet rd = st.executeQuery("select * from student");
+            ResultSet rs = st.executeQuery("select * from student");
 
             while(rs.next()){
                 System.out.println(
