@@ -6,14 +6,15 @@
 *.war
 *.ear
 *.jar
+!**/lib/*.jar
 
 # Build directories
 **/target/
 .mvn/
 
 # Embedded servers & tools
-servlet/tomcat/
-servlet/maven/
+**/tomcat/
+**/maven/
 
 # Backup files
 **/.git_bak/
